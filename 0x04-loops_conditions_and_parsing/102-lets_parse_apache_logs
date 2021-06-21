@@ -1,2 +1,2 @@
-#/bin/bash
+#!/bin/bash
 awk '//{print $1, $9}' apache-access.log
