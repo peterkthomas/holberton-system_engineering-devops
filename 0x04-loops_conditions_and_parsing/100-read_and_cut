@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while input= read -r line
+do
+	echo "$line" | cut -d ':' -f1,4,7
+done < /etc/passwd
