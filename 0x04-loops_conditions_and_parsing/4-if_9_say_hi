@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# This file echoes "Hi" on iteration 9
 
 i=0
 
