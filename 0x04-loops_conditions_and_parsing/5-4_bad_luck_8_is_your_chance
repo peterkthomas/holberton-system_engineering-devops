@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Echoes bad luck on line 4, good luck on line 8
 
 i=0
 

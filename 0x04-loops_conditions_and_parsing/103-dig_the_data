@@ -1,2 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Displays ip and status code, with a count of repeat occurences
+
 awk '{count[$1]++} END {for (word in count) print count[word], word, $9}' apache-access.log | sort -rn

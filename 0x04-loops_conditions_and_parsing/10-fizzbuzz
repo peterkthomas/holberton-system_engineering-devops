@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Iterates 1-100, with some custom text at multiples of 3 or 5 or both
 
 for i in {1..100}
 do

@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Lists contents of current directory without "-" at the start
 
 for i in *
 do

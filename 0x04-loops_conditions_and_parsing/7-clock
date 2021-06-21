@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Echoes hours and minutes
 
 hour=0
 

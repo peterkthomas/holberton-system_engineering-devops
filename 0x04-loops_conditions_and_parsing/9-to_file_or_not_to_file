@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Displays info about holbertonschool file
 
 file="holbertonschool"
 
