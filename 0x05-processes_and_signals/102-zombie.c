@@ -1,11 +1,16 @@
+/** 102-zombie.c
+*   Creates 5 zombie processes and calls an infinite loop
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/types.h>
 
-/* 102-zombie.c
-*   Creates 5 zombie processes and calls an infinite loop
-*/
+/** infinite_while
+ * 	takes no parameters
+ * 	performs an infinite loop
+ */
 
 int infinite_while(void)
 {
@@ -15,6 +20,10 @@ int infinite_while(void)
     }
     return (0);
 }
+
+/** main()
+ * Program entry point
+ */
 
 int main(void)
 {
