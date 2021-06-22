@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Bash script that stops "to infinity and beyond"
+
+kill $( ps ax | grep to_infinity_and_beyond | grep -v grep | cut -d ' ' -f1 )

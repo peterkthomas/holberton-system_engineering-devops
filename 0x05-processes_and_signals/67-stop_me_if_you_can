@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Bash script that stops "to infinity and beyond"
+
+pkill bash ./7-highlander

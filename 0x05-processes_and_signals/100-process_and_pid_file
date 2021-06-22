@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Displays "To infinity and beyond" and doesn't care about SIGTERM
+
+PID="/var/run/holbertonscript.pid"
+echo '$$' >> "$PID"
+
+trap 'echo "I hate the kill command"; rm -f "$PID"; exit' SIGTERM
+trap 'rm -f "$PID"; exit' SIGQUIT
+trap 'echo "Y U no love me?!"' SIGINT
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+done

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Displays PIDs by grepping PS
+# shellcheck disable=SC2009
+
+ps afuxh | grep bash 
