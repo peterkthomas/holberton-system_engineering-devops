@@ -1,8 +1,3 @@
-/*
-*  102-zombie.c
-*   Creates 5 zombie processes and calls an infinite loop
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
