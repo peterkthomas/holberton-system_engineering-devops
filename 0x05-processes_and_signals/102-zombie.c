@@ -3,7 +3,9 @@
 #include <unistd.h>
 #include <sys/types.h>
 
-// Creates 5 zombie processes and calls an infinite loop
+/* 102-zombie.c
+*   Creates 5 zombie processes and calls an infinite loop
+*/
 
 int infinite_while(void)
 {
