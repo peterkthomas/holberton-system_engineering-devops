@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Bash script that stops "to infinity and beyond"
 
-pkill -f infinity
+pkill -f beyond
