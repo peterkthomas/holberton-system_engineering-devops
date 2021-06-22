@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # List running processes
 
-ps afhux
+ps afux
