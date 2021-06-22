@@ -19,9 +19,8 @@ int infinite_while(void)
 int main(void)
 {
 	pid_t child;
-	int i;
 
-	for ( i=0; i < 5; i++)
+	for (int i=0; i < 5; i++)
 	{
 		child = fork();
 
