@@ -20,8 +20,7 @@ int main(void)
 {
 	pid_t child;
 
-	int i;
-	for (i=0; i < 5; i++)
+	for (int i=0; i < 5; i++)
 	{
 		child = fork();
 
@@ -32,5 +31,6 @@ int main(void)
 	}
 
 	infinite_while();
+
 	return 0;
 }
