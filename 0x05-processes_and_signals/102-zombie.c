@@ -1,7 +1,6 @@
 /** 102-zombie.c
 *   Creates 5 zombie processes and calls an infinite loop
 */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -11,7 +10,6 @@
  * 	takes no parameters
  * 	performs an infinite loop
  */
-
 int infinite_while(void)
 {
     while (1)
@@ -24,7 +22,6 @@ int infinite_while(void)
 /** main()
  * Program entry point
  */
-
 int main(void)
 {
 	pid_t child;
