@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# install nginx, set up redirect
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo ufw allow 'Nginx HTTP'
+sudo sh -c 'echo "Hello World" > /var/www/html/index.html'
+sed -i '/server_name _/a location /redirect_me { rewrite ^ https://www.zombo.com/ permanent; }' /etc/nginx/sites-available/default
+service nginx restart
