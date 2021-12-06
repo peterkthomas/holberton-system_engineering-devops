@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# install nginx, set up 404
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo echo "Hello World" | sudo tee /var/www/html/index.html
+sudo echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
+line="location /redirect_me {rewrite ^/(.*)$ http://www.zombo.com permanent;}"
+location="/etc/nginx/sites-enabled/default"
+sudo sed -i "36i $line" "$location"
+error="error_page 404 /404.html;\nlocation = /404.html {\nroot /var/www/html;\ninternal;\n}"
+sudo sed -i "25i $error" "$location"
+sudo service nginx restart
