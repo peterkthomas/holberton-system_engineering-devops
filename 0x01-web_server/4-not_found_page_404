@@ -4,8 +4,8 @@ sudo apt-get -y update
 sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
 sudo sh -c 'echo "Hello World" > /var/www/html/index.html'
-sudo echo "Ceci n'est pas une page" > blah.html
-sudo mv blah.html /var/www/html/404.html
+sudo echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
 sudo sed -i '/listen 80 default_server;/a rewrite ^/redirect_me https://www.zombo.com permanent;' /etc/nginx/sites-available/default
-sudo sed -i '/server_name _;/a error_page 404 /404.html; location = /404.html {root /var/www/html/; internal; }' /etc/nginx/sites-available/default
+error="error_page 404 /404.html;\nlocation = /404.html {\nroot /var/www/html;\ninternal;\n}"
+sudo sed -i "25i $error" "$location"
 sudo service nginx restart
