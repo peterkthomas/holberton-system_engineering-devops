@@ -51,7 +51,7 @@ frontend haproxynode
     default_backend www-backend
 
 frontend www-https
-   bind *:443 ssl crt /etc/ssl/www.netpath.tech/www.netpath.tech.pem
+   bind *:443 ssl crt /etc/ssl/www.netpath.tech/www.netpatch.tech.pem
    reqadd X-Forwarded-Proto:\ https
    acl letsencrypt-acl path_beg /.well-known/acme-challenge/
    use_backend letsencrypt-backend if letsencrypt-acl
@@ -66,8 +66,3 @@ backend www-backend
 
 backend letsencrypt-backend
    server letsencrypt 127.0.0.1:8888
-
-listen stats
-    bind :32700
-    stats enable
-    stats uri /
