@@ -46,5 +46,6 @@ def request():
     with open(empid + '.json', 'w') as file:
         json.dump(data, file)
 
+
 if __name__ == '__main__':
     request()
