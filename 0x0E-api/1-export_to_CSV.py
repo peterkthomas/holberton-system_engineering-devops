@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
     API Stuff
 """
@@ -14,6 +13,7 @@ root = 'https://jsonplaceholder.typicode.com/'
 
 def request():
     """Performs the Request"""
+
     if len(sys.argv) < 2:
         return print('USAGE:', __file__, '<employee id>')
     empid = sys.argv[1]
