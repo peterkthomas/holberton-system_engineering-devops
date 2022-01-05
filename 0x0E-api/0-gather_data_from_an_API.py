@@ -21,7 +21,7 @@ def request():
     except ValueError:
         return print('Employee id must be an integer')
 
-    response = requests.get(root + 'users/' + eid)
+    response = requests.get(root + 'users/' + empid)
     if response.status_code == 404:
         return print('User id not found')
     elif response.status_code != 200:
