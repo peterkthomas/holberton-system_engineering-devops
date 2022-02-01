@@ -2,5 +2,5 @@
 # Set up server to listen on port 80
 sudo service nginx stop
 sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
-sudo echo "daemon off;" >> /etc/nginx/nginx.conf
+sudo echo \"daemon off;\" >> /etc/nginx/nginx.conf
 sudo service nginx start
