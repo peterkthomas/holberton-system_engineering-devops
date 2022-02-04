@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# whoami with a CLI parameter
+sudo -u "$1" whoami
